@@ -1,0 +1,156 @@
+/* layout */
+
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image:url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+  }
+  
+  footer{
+    width: 85%;
+    max-width: 1700px;
+    display: flex;
+    justify-content: flex-end;
+    margin: -74px 110px 0em;
+}
+
+ a:hover{
+   color:hsl(300, 69%, 71%) ;
+ }
+  .container
+  {
+    margin:0 auto;
+    width: 100%;
+    max-width: 1600px;
+  
+  }
+  header{
+    margin-bottom: 1em;
+  }
+  .content{
+    display: flex;
+    width: 85%;
+    max-width: 1700px;
+    justify-content: space-between;
+  
+    margin: 0 auto;
+  }
+  .logo{
+    margin:3em 41px 2em;
+    width: 200px;
+  }
+  .content-image{
+    flex-basis: 55%;
+    flex-shrink: 1;
+  }
+  .content-text{
+    flex-basis: 35%;
+    
+    flex-shrink: 2;
+  }
+  .icons{
+  align-self: flex-end;
+  margin-top: 4em;  
+  }
+  
+  i{
+  color: white;
+  margin-left: 1em;
+  height: 2em;
+  
+  }
+  .desktop{
+    width: 100%;
+  }
+  
+  .social-icon{
+    width:30px;
+}
+  /* typography */
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white ;
+  }
+  .heading h1
+  {
+    margin-top: 1em;
+  }
+  
+  .para p{
+    font-family: 'Open Sans', sans-serif;
+    color: white ;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0.2em;
+  
+  }
+  
+  /* button */
+  button{
+    margin-top: 1em;
+    border-width: 0;
+    border-radius: 2rem;
+    font-family: Arial;
+   background-color: white;
+  font-size: 1.2rem;
+  padding: 0.5em 1.8em;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  
+  box-shadow: 2px 8px 22px -2px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 2px 8px 22px -2px rgba(0,0,0,0.49);
+  -moz-box-shadow: 2px 8px 22px -2px rgba(0,0,0,0.49);
+  }
+  button:hover{
+    background-color:hsl(300, 69%, 71%);
+    color: white;
+  }
+  
+  /* media query */
+  @media (max-width:800px) {
+    .content{
+      flex-direction: column;
+    }
+    .content-text{
+      margin-left: 0;
+      align-self: center;
+       text-align: center;
+    }
+  
+    body{
+      background-image: url(./images/bg-mobile.svg);
+    }
+  footer{
+    justify-content: center;
+    margin: -36px 25px 0em;
+  }
+  button{
+    padding: 1em 3em;
+    font-size: 15px;
+  }
+  .logo{
+    margin: 3em 21px 4em;
+    width: 160px;
+  }
+
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white ;
+  }
+  i {
+    margin-left: 10px;
+
+}
+.social-icon{
+    width:25px;
+}
+  }
